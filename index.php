@@ -1,5 +1,8 @@
-<?php 
+<?php
+
 	require_once("class/MySqlDatabaseClass.php"); 
+	require_once("class/LoginClass.php");
+	
 	$query = "INSERT INTO `login` ( `id`,
 									`username`,
 									`password`,
@@ -10,21 +13,12 @@
 										'geheim',
 										'sjaak',
 										'yes')";
-
-	
+										
 	$database->fire_query($query);
 
-
-
-
-
-
-
+	//$login = new LoginClass();
+	
+	echo LoginClass::find_all();
+	
 ?>
-
-<?php
- require_once("css.css");
-Dit is een test voor database class
-
-
-?>
+HiHaHi
