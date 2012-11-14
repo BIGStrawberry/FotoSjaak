@@ -1,3 +1,6 @@
+<html>
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+</html>
 <?php
 if ( isset($_POST['submit'] ))
 {

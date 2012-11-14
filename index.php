@@ -1,5 +1,4 @@
 <?php
-
 	require_once("class/MySqlDatabaseClass.php"); 
 	require_once("class/LoginClass.php");
 	
