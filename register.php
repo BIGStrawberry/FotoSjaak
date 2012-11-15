@@ -1,6 +1,3 @@
-<html>
-	<link rel="stylesheet" type="text/css" href="./css/style.css" />
-</html>
 <?php
 if ( isset($_POST['submit'] ))
 {
@@ -17,13 +14,11 @@ if ( isset($_POST['submit'] ))
 	}
 	else
 	{
-		//Schrijf alle gegevens naar de database 
-		//en verstuur een e-mail met activatie link
-		echo "record niet gevonden";
-	
+		//Schrijf alle gegevens naar de database.
+		LoginClass::email_exists( $_POST ['e-mail']);
 	}
 	
-	}
+}	
 
 ?>
 
@@ -32,47 +27,58 @@ if ( isset($_POST['submit'] ))
 		<caption> Register </caption>
 		<tr>
 			<td> firstname </td>
-			<th> <input type = 'text' name 'firstname' /> </td>
+			<td> <input type = 'text' name  = 'firstname' /> </td>
 		</tr>
 		
 		<tr>
 			<td> infix </td>
-			<th> <input type = 'text' name 'infix' /> </td>
+			<td> <input type = 'text' name  = 'infix' /> </td>
 		</tr>
 		
 		<tr>
 			<td> surname </td>
-			<th> <input type = 'text' name 'surname' /> </td>
+			<td> <input type = 'text' name  = 'surname' /> </td>
 		</tr>
 		
 		<tr>
 			<td> address </td>
-			<th> <input type = 'text' name 'address' /> </td>
+			<td> <input type = 'text' name = 'address' /> </td>
 		</tr>
 		
 		<tr>
 			<td> addressnumber </td>
-			<th> <input type = 'text' name 'addressnumber' /> </td>
+			<td> <input type = 'text' name = 'addressnumber' /> </td>
+		</tr>
+		
+		<tr>
+			<td> city </td>
+			<td> <input type = 'text' name = 'city' /> </td>
 		</tr>
 		
 		<tr>
 			<td> zipcode </td>
-			<th> <input type = 'text' name 'zipcode' /> </td>
+			<td> <input type = 'text' name = 'zipcode' /> </td>
 		</tr>
 		
 		<tr>
+			<td> country </td>
+			<td> <input type = 'text' name = 'country' /> </td>
+		</tr>
+		
+		
+		<tr>
 			<td> telephonenumber </td>
-			<th> <input type = 'text' name 'telephonenumber' /> </td>
+			<td> <input type = 'text' name = 'telephonenumber' /> </td>
 		</tr>
 		
 		<tr>
 			<td> mobilenumber </td>
-			<th> <input type = 'text' name 'mobilenumber' /> </td>
+			<td> <input type = 'text' name = 'mobilenumber' /> </td>
 		</tr>
 		
 		<tr>
 			<td> e-mail </td>
-			<td> <input type='text' name='e-mail' /> </td>
+			<td> <input type='text' name = 'e-mail' /> </td>
 		
 		<tr>
 			<td>&nbsp;</td>

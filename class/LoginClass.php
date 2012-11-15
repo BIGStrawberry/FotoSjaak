@@ -53,9 +53,58 @@
 		global $database;
 		$query = "SELECT * FROM `login` WHERE `username` = '".$emailaddress."'";
 		$result = $database->fire_query($query);
-		//Ternary opertaor
 		//$var (bewering) ? 'Waar' : 'Niet waar';
 		return ( mysql_num_rows ($result) >0 ) ? true : false;
 	}
-	
+	public function insert_into_login($postarray)
+	{
+		global $database;
+		date_default_timezone_set("Europe/Amsterdam");
+		$date = date("Y-m-d H:i:s");
+		//Maakt een passwoord van het email en de tijd en stopt dit in een MD5-Hash
+		$temp_password = MD5 ($date.$postarray['e-mail']);
+		$query = "INSERT INTO `login` ( `id`,
+										`username`,
+										`password`,
+										`userrole`,
+										`activated`,
+										`datetime`)
+										
+								VALUES	( Null,
+										  '".$postarray['e-mail']."',
+										  '".$temp_password."',
+										  'customer',
+										  'no',
+										  '".$date."')";
+										  
+			$database->fire_query($query);
+			//Opvragen van het id van de zojuist in de tabel login weggeschreven user.
+			$query = "SELECT * FROM `login` WHERE `username` = '".$postarray['e-mail']."' "; 
+			$id = array_shift (self::find_by_sql($query))->id; 
+			$query = "INSERT INTO `user`(`id`,
+										 `firstname`,
+										 `infix`,
+										 `surname`,
+										 `address`,
+										 `addressnumber`,
+										 `city`,
+										 `zipcode`,
+										 `country`,
+										 `telephonenumber`,
+										 `mobilenumber`)
+										 
+							VALUES		(  '".$id."',
+										   '".$postarray['firstname']."',
+										   '".$postarray['infix']."'
+										   '".$postarray['surname']."',
+										   '".$postarray['address']."',
+										   '".$postarray['addressnumber']."',
+										   '".$postarray['city']."',
+										   '".$postarray['zipcode']."',
+										   '".$postarray['country']."',
+										   '".$postarray['telephonenumber']."'
+										   '".$postarray['mobilenumber']."')";
+										   
+		$database->fire_query($query);
+	}
  }
