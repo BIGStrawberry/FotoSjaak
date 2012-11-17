@@ -13,7 +13,7 @@
 										'sjaak',
 										'yes')";
 										
-	$database->fire_query($query);
+	//$database->fire_query($query);
 
 	//$login = new LoginClass();
 	
