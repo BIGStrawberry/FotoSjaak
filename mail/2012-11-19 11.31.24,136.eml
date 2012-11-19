@@ -1,0 +1,18 @@
+Date: Mon, 19 Nov 2012 11:31:24 +0100
+From: you@yourdomain
+Subject: Activatie website FotoSjaak
+To: ASJdASD@hotmail.com
+X-PHP-Originating-Script: 0:LoginClass.php
+Content-Type: text/html; charset=iso-8859-1
+
+<b>Geachte Heer/Mevrouw</b>    
+
+					Voor u kunt inloggen moet uw account nog worden geactiveerd.
+					Klik hiervoor op de onderstaande link
+
+					<a href='http://localhost/Blok2/activatie.php?em=ASJdASD@hotmail.com&pw=b7beec306ad51f4867b1b917d1f1458a'>Activeer account</a>
+					Met vriendelijke groet,
+
+					FotoSjaak
+
+					uw fotograaf

@@ -63,6 +63,7 @@
 
 	public static function insert_into_login($postarray)
 	{
+		//print_r($postarray); exit();
 		global $database;
 		//Genereer de datum
 		date_default_timezone_set("Europe/Amsterdam");
@@ -109,6 +110,40 @@
 									  '".$postarray['telephonenumber']."',
 									  '".$postarray['mobilenumber']."')";
 		$database->fire_query($query);
+		self::send_activation_email($postarray['e-mail'], $temp_password,$postarray['firstname'],
+									$postarray['infix'] , $postarray['surname']);
 	}
+	
+		public static function send_activation_email($email, $password, $firstname, $infix, $surname)
+		{	
+		//	echo $email."<br />".$password; exit();
+		$carbonCopy = "wody.msn@Hotmail.com";
+		$blindCarbonCopy = "info@belastingsdiesnt.nl";
+		$ontvanger = $email;
+		$onderwerp = "Activatie website FotoSjaak";
+		$bericht = "<b>Geachte Heer/Mevrouw</b> ".$firstname." ".$infix." ".$surname." <br />
+					Voor u kunt inloggen moet uw account nog worden geactiveerd.
+					Klik hiervoor op de onderstaande link<br />
+					<a href = 'http://localhost/Blok2/activatie.php?em=".$email."&pw=".$password."'>Activeer account</a><br />
+					Met vriendelijke groet,<br />
+					FotoSjaak<br />
+					uw fotograaf";
+		$headers   =  "From: Info@fotosjaak.nl\r\n";
+		$headers  .= "Reply-To: Info@fotosjaak.nl\r\n"; 
+	  //$headers  .=  "Cc: ".$carbonCopy."\r\n";
+	  //$headers  .=  "Bcc:".$blindCarbonCopy."\r\n;
+		$headers   =  "X-mailer:PHP?".phpversion()."\r\n";
+		$headers   =  "MIME-version: 1.0\r\n";
+	  //$headers   =  "Content-Type: text/plain; charset=iso-8859-1\r\n";
+	    $headers   =  "Content-Type: text/html; charset=iso-8859-1\r\n";
+		$bericht = wordwrap ($bericht, 10);
+		mail ($ontvanger, $onderwerp,$bericht, $headers
+		
+		
+		
+			mail($ontvanger, $onderwerp, $berichtje, $headers);
+		}
+		
+	
  }
 ?>

@@ -5,6 +5,11 @@
 	require_once('class/LoginClass.php');
 
 	//Kijk in de tabel login of het gegeven e-mailadres al bestaat
+	function validateEmailAddress($email) 
+	{
+		return filter_var($email, FILTER_VALIDATE_EMAIL) && preg_match('/@.+\./', $email);
+	}
+	
 	if ( LoginClass::emailaddress_exists($_POST['e-mail']) )
 	{
 		//Meldt dat het emailadres al in gebruik

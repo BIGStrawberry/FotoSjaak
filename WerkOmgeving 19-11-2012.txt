@@ -1,0 +1,13 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="0">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="530" startPos="378" endPos="378" selMode="0" lang="PHP" encoding="-1" filename="C:\wamp\www\Blok2\config\config.php" />
+            <File firstVisibleLine="4" xOffset="0" scrollWidth="1070" startPos="552" endPos="552" selMode="0" lang="PHP" encoding="-1" filename="C:\wamp\www\Blok2\class\MySqlDatabaseClass.php" />
+            <File firstVisibleLine="13" xOffset="0" scrollWidth="1430" startPos="241" endPos="241" selMode="0" lang="PHP" encoding="-1" filename="C:\wamp\www\Blok2\class\LoginClass.php" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1190" startPos="88" endPos="88" selMode="0" lang="PHP" encoding="-1" filename="C:\wamp\www\Blok2\index.php" />
+            <File firstVisibleLine="42" xOffset="0" scrollWidth="1010" startPos="1290" endPos="1221" selMode="0" lang="PHP" encoding="-1" filename="C:\wamp\www\Blok2\register.php" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="710" startPos="358" endPos="358" selMode="0" lang="PHP" encoding="-1" filename="C:\wamp\www\Blok2\activatie.php" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>
