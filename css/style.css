@@ -1,24 +1,151 @@
-  <style type="text/css">
-  <!--
-    input, select, textarea {
-      border: 1px solid #000;
-      background-color: #ccc;
-    }
-	
-    label {
-      font-family: Tahoma, Geneva, sans-serif;
-      font-weight: bold;
-      font-size: 14px;
-    }
-    
-    .submit {
-      border: 2px solid #333;
-      background-color: #862222;
-      font-family: Courier New, Courier New, Courier, monospace;
-      color: #fff;
-    }
-    fieldset {
-      border:1px solid #333;
-    }
-    -->
-  </style>
+body
+{
+	font-family:Arial;
+	font-size:1em;
+	background-color:RGBA(100,149,237,1);
+	color:RGBA(2,0,81,0.6);
+	border:0px solid #12FFaa;
+	margin:0px;
+	padding:0px;
+}
+
+p, h1, h2, h3, h4, h5, h6, h7
+{
+	margin:0px;
+	padding:0px;
+}
+
+input { font-family:Comic Sans MS; width:200px; }
+select { font-family:Comic Sans MS; width:200px; }
+input[type=radio] { width:50px;}
+
+div#container
+{
+	border:0px solid red;
+	width:600px;
+	margin:20px auto;
+}
+
+#banner, #footer
+{
+	background-color:RGBA(255, 255, 255,0.9);
+	font-size:1.2em;
+	font-weight:800;
+	text-align:center;
+}
+
+#content
+{
+	border:1px solid white;
+	min-height:400px;
+	position:relative;
+}
+
+#link
+{
+	position:absolute;
+	top:0px;
+	left:-180px;
+	border:0px solid pink;
+	width:170px;
+}
+
+a:link 
+{ 
+	color:RGBA(2,0,81,0.6);
+}
+
+a:link 
+{ 
+	text-decoration:none;
+}
+
+a:visited 
+{
+	text-decoration:none;
+	color:RGBA(2,0,81,0.6);
+}
+
+a:hover
+{
+	text-decoration:underline;
+	color:RGBA(210,0,0,0.6);
+}
+
+a:active
+{
+	text-decoration:underline;
+	color:RGBA(210,0,0,0.6);
+}
+
+#link ul
+{
+	list-style-type:none;
+	border:0px solid black;
+	margin:0px;
+	padding:0px;
+}
+
+#link li
+{
+	border:0px solid red;
+	text-align:right;
+}
+
+#link a
+{
+	border:0px solid blue;
+}
+
+#faq table, #faq tr, #faq td, #faq th
+{
+	border:1px solid orange;
+	border-collapse:collapse;
+}
+
+#faq th
+{
+	background-color:orange;
+	color:RGBA(255,255,255,1);
+}
+
+#faq td
+{
+	padding:10px;
+}
+
+.changedata table, .changedata tr, .changedata td, .changedata th
+{
+	border:1px solid orange;
+	border-collapse:collapse;
+	margin:20px auto;
+	text-align:center;
+}
+
+.changedata th
+{
+	background-color:orange;
+	color:RGBA(255,255,255,1);
+	padding:3px 5px 3px 5px;
+	border-right: 1px solid white;
+}
+
+.changedata th:last-of-type { border-right:1px solid orange; }
+
+.changedata td.name
+{
+	padding:0px 0px 0px 5px;
+	color:RGBA(25,25,25, 1);
+	font-weight:bold;
+}
+
+.changedata td  { padding:5px;}
+
+#img-banner  { width:600px;}
+
+caption { font-weight:bold; text-align:left; font-size:1.4em; color:red; }
+
+img#prtsc { width:200px;}
+
+#footer { font-size:.9em; }
+#picto-banner { font-size:.9em; text-align:right; vertical-align:middle; padding:2px 10px; }

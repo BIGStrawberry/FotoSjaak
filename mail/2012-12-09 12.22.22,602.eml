@@ -1,0 +1,18 @@
+Date: Sun, 09 Dec 2012 12:22:22 +0100
+Subject: Activatiemail website FotoSjaak
+To: Henk-De-Vries@Pakistan.nl
+X-PHP-Originating-Script: 0:LoginClass.php
+From: info@fotosjaak.nl
+Reply-To: info@fotosjaak.nl
+Cc: sjaak@fotosjaak.nl
+X-mailer: PHP/5.4.3
+MIME-version: 1.0
+Content-Type: text/html; charset=iso-8859-1
+
+Geachte heer/mevrouw <b>Henk De Vries</b><br /><br />
+					  Voor u kunt inloggen moet uw account nog worden geactiveerd.<br />
+					  Klik hiervoor op de onderstaande link<br /><br />
+					  <a href='http://localhost/2012-2013/AM1A/Blok2/index.php?content=activatie&em=Henk-De-Vries@Pakistan.nl&pw=d391f08e472868dfc1c14738d66a4990'>activeer account</a><br /><br />
+					  Met vriendelijke groet,<br />
+					  <i><u>Sjaak de Vries</u></i><br />
+					  uw fotograaf

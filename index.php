@@ -1,23 +1,24 @@
-<?php
-	require_once("class/MySqlDatabaseClass.php"); 
-	require_once("class/LoginClass.php");
-	
-	$query = "INSERT INTO `login` ( `id`,
-									`username`,
-									`password`,
-									`userrole`,
-									`activated`)
-						VALUES ( Null,
-										'test@gmail.com',
-										'geheim',
-										'sjaak',
-										'yes')";
-										
-	//$database->fire_query($query);
-
-	//$login = new LoginClass();
-	
-	echo LoginClass::find_all();
-	
-?>
-HiHaHi
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>gamelibrary</title>
+		<link rel='stylesheet' type='text/css' href='./css/style.css' />
+	</head>
+	<body>
+		<div id="container">
+			<div id='banner'>
+				<?php include("banner.php"); ?>
+			</div>
+			<div id='content'>
+				<div id='link'>
+					<?php include("./class/SessionClass.php"); ?>
+					<?php include("./link.php"); ?>
+				</div>
+				<?php include("./navigation.php"); ?>
+			</div>
+			<div id='footer'>
+				<?php include("footer.php"); ?>
+			</div>
+		</div>			
+	</body>
+</html>

@@ -1,0 +1,18 @@
+Date: Mon, 26 Nov 2012 09:08:11 +0100
+Subject: Activatiemail website FotoSjaak
+To: asdfasd@hotmail.com
+X-PHP-Originating-Script: 0:LoginClass.php
+From: info@fotosjaak.nl
+Reply-To: info@fotosjaak.nl
+Cc: sjaak@fotosjaak.nl
+X-mailer: PHP/5.4.3
+MIME-version: 1.0
+Content-Type: text/html; charset=iso-8859-1
+
+Geachte heer/mevrouw <b>f fa sdf</b><br /><br />
+					  Voor u kunt inloggen moet uw account nog worden geactiveerd.<br />
+					  Klik hiervoor op de onderstaande link<br /><br />
+					  <a href='http://localhost/Blok2/activatie.php?em=asdfasd@hotmail.com&pw=e669c5697012d3caf670d3662595f5d5'>activeer account</a><br /><br />
+					  Met vriendelijke groet,<br />
+					  <i><u>Sjaak</u></i><br />
+					  uw fotograaf

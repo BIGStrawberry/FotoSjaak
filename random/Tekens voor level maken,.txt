@@ -1,0 +1,11 @@
+'a' = Kruisje Ankh
+'b' = Katten beeld
+'c' = Potion
+'d' = Scarab
+'w' = Block
+'x' = Wall1 = Normale muur
+'y' = wall2 = Normale muur met scheurtjes
+'z' = Door
+'@' = Background
+'.' = Transparant
+

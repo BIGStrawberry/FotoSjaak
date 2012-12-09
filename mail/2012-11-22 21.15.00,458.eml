@@ -1,0 +1,18 @@
+Date: Thu, 22 Nov 2012 21:15:00 +0100
+Subject: Activatiemail website FotoSjaak
+To: pady_home@zonnet.nl
+X-PHP-Originating-Script: 0:LoginClass.php
+From: info@fotosjaak.nl
+Reply-To: info@fotosjaak.nl
+Cc: sjaak@fotosjaak.nl
+X-mailer: PHP/5.4.3
+MIME-version: 1.0
+Content-Type: text/html; charset=iso-8859-1
+
+Geachte heer/mevrouw <b>Patrick Jozuf Walter Dijkstra</b><br /><br />
+					  Voor u kunt inloggen moet uw account nog worden geactiveerd.<br />
+					  Klik hiervoor op de onderstaande link<br /><br />
+					  <a href='http://localhost/Blok2/activatie.php?em=pady_home@zonnet.nl&pw=4aa95f2eb58f12ef9dd1c62916842e92'>activeer account</a><br /><br />
+					  Met vriendelijke groet,<br />
+					  <i><u>Sjaak</u></i><br />
+					  uw fotograaf

@@ -1,0 +1,36 @@
+Date: Thu, 22 Nov 2012 20:14:55 +0100
+From: you@yourdomain
+Subject: Activatie website FotoSjaak
+To: test@gmail.com
+X-PHP-Originating-Script: 0:LoginClass.php
+Content-Type: text/html; charset=iso-8859-1
+
+<b>Geachte
+Heer/Mevrouw</b>
+   <br />
+					Voor
+u kunt
+inloggen
+moet uw
+account
+nog worden
+geactiveerd.
+					Klik
+hiervoor
+op de
+onderstaande
+link<br
+/>
+					<a
+href =
+'http://localhost/Blok2/activatie.php?em=test@gmail.com&pw=2625426277ead0b8494079d20740bd8d'>Activeer
+account</a><br
+/>
+					Met
+vriendelijke
+groet,<br
+/>
+					FotoSjaak<br
+/>
+					uw
+fotograaf
