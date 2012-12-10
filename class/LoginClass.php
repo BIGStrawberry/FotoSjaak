@@ -88,10 +88,10 @@
 										'".$date."')";
 		$database->fire_query($query);
 		
-		//Opvragen van het id van de zojuist in de tabel login weggeschreven user
+
 		$query = "SELECT * FROM `login` WHERE `username` = '".$postarray['e-mail']."'";
 		$id = array_shift(self::find_by_sql($query))->id;
-		$query = "INSERT INTO `user` ( `id`,
+		$query = "INSERT INTO `user` (`id`,
 									  `firstname`,
 									  `infix`,
 									  `surname`,
@@ -116,7 +116,7 @@
 		$database->fire_query($query);
 		self::send_activation_email($postarray['e-mail'], $temp_password, $postarray['firstname'], $postarray['infix'], $postarray['surname']);
 	}
-	
+
 	public static function send_activation_email($email, $password, $firstname, $infix, $surname )
 	{
 		//echo $email."<br />".$password; exit();
@@ -124,16 +124,6 @@
 		$blindCarbonCopy = "info@belastingdienst.nl";
 		$ontvanger = $email;
 		$onderwerp = "Activatiemail website FotoSjaak";
-		/*
-		//Bericht voor platte tekst mail
-		$bericht   = "Geachte heer/mevrouw ".$firstname." ".$infix." ".$surname."\r\n
-					  Voor u kunt inloggen moet uw account nog worden geactiveerd.
-					  Klik hiervoor op de onderstaande link\r\n
-					  http://localhost/2012-2013/AM1A/Blok2/activatie.php?em=".$email."&pw=".$password."\r\n
-					  Met vriendelijke groet,
-					  Arjan de Ruijter
-					  uw fotograaf";
-		*/	  
 		$bericht   = "Geachte heer/mevrouw <b>".$firstname." ".$infix." ".$surname."</b><br /><br />
 					  Voor u kunt inloggen moet uw account nog worden geactiveerd.<br />
 					  Klik hiervoor op de onderstaande link<br /><br />
@@ -148,9 +138,7 @@
 		$headers  .= "Bcc: ".$blindCarbonCopy."\r\n";
 		$headers  .= "X-mailer: PHP/".phpversion()."\r\n";
 		$headers  .= "MIME-version: 1.0\r\n";
-		//$headers  .= "Content-Type: text/plain; charset=iso-8859-1\r\n";
 		$headers  .= "Content-Type: text/html; charset=iso-8859-1\r\n";
-		//$bericht = wordwrap($bericht, 10);
 		mail( $ontvanger, $onderwerp, $bericht, $headers );
 	}
 	
@@ -161,7 +149,6 @@
 				  SET `password` = '".$password."',
 					  `activated` = 'yes'				  
 				  WHERE `username` = '".$email."'";
-		//echo $query; exit();
 		$database->fire_query($query);
 	}
 	
@@ -181,7 +168,7 @@
 		$query = "SELECT * FROM `login`
 				  WHERE `username` = '".$email."'";
 		$record = self::find_by_sql($query);
-		//Ternary operator, als het account is geactiveerd return true, anders false
+		//Ternary operator, als het account is geactiveerd return true, anders false.
 		return ($record[0]->activated == 'yes') ? true : false;		
 	}
 	
@@ -193,11 +180,6 @@
 		$user_array = self::find_by_sql($query);
 		$user = array_shift($user_array);
 		return $user;
-		//var_dump($user)."<br />";
-		//echo $query; exit();
-	
 	}
-	
-	
  }
 ?>
