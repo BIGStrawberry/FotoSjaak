@@ -1,0 +1,53 @@
+Date: Thu, 13 Dec 2012 10:07:02 +0100
+Subject: Bevestigingsmail website FotoSjaak
+To: 
+X-PHP-Originating-Script: 0:OrderClass.php
+From: info@fotosjaak.nl
+Reply-To: info@fotosjaak.nl
+Cc: sjaak@fotosjaak.nl
+X-mailer: PHP/5.4.3
+MIME-version: 1.0
+Content-Type: text/html; charset=iso-8859-1
+
+Geachte heer/mevrouw <b>Wouter  Dijkstra</b><br /><br />
+					  Wij hebben de onderstaande order van u ontvangen..<br />
+						<table>
+							<tr>
+								<td>Uw order-id </td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Korte omschrijving opdracht</td>
+								<td>asdfas </td>
+							</tr>
+							<tr>
+								<td>Uitgebreide omschrijving opdracht</td>
+								<td>dfasdf</td>							
+							</tr>
+							<tr>
+								<td>Opleveringsdatum</td>
+								<td>2012-12-25</td>							
+							</tr>
+							<tr>
+								<td>Datum van het evenement</td>
+								<td>2012-12-31</td>							
+							</tr>
+							<tr>
+								<td>Uw foto's worden gemaakt in</td>
+								<td>color</td>							
+							</tr>
+							<tr>
+								<td>Aantal foto's</td>
+								<td>750</td>							
+							</tr>
+							<tr>
+								<td>Datum aanvraag</td>
+								<td></td>							
+							</tr>
+						</table>
+					  Wanneer u op de onderstaande link klinkt, gaat u akkord met <br />
+					  de algemene voorwaarden en is de order definitief. <br />
+					  <a href=''>Bevestig order</a><br /><br />
+					  Met vriendelijke groet,<br />
+					  <i><u>Wouter Dijkstra</u></i><br />
+					  uw fotograaf

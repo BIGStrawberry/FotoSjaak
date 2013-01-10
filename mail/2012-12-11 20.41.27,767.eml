@@ -1,0 +1,18 @@
+Date: Tue, 11 Dec 2012 20:41:27 +0100
+Subject: Activatiemail website FotoSjaak
+To: 
+X-PHP-Originating-Script: 0:OrderClass.php
+From: info@fotosjaak.nl
+Reply-To: info@fotosjaak.nl
+Cc: sjaak@fotosjaak.nl
+X-mailer: PHP/5.4.3
+MIME-version: 1.0
+Content-Type: text/html; charset=iso-8859-1
+
+Geachte heer/mevrouw <b>Wouter  Dijkstra</b><br /><br />
+					  Voor u kunt inloggen moet uw account nog worden geactiveerd.<br />
+					  Klik hiervoor op de onderstaande link<br /><br />
+					  <a href='http://localhost/Blok2/index.php?content=activatie&em=&pw='>activeer account</a><br /><br />
+					  Met vriendelijke groet,<br />
+					  <i><u>Sjaak de Vries</u></i><br />
+					  uw fotograaf

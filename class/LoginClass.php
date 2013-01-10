@@ -67,7 +67,6 @@
 	
 	public static function insert_into_login($postarray)
 	{
-		//print_r($postarray); exit();
 		global $database;
 		//Genereer de datum
 		date_default_timezone_set("Europe/Amsterdam");
@@ -119,7 +118,6 @@
 
 	public static function send_activation_email($email, $password, $firstname, $infix, $surname )
 	{
-		//echo $email."<br />".$password; exit();
 		$carbonCopy = "sjaak@fotosjaak.nl";
 		$blindCarbonCopy = "info@belastingdienst.nl";
 		$ontvanger = $email;
@@ -129,7 +127,7 @@
 					  Klik hiervoor op de onderstaande link<br /><br />
 					  <a href='http://localhost/Blok2/index.php?content=activatie&em=".$email."&pw=".$password."'>activeer account</a><br /><br />
 					  Met vriendelijke groet,<br />
-					  <i><u>Sjaak de Vries</u></i><br />
+					  <i><u>Wouter Dijkstra</u></i><br />
 					  uw fotograaf";
 					  
 		$headers   = "From: info@fotosjaak.nl\r\n";
@@ -180,6 +178,16 @@
 		$user_array = self::find_by_sql($query);
 		$user = array_shift($user_array);
 		return $user;
+	}
+	
+	public static function find_by_id_email ($id)
+	{
+		//$query = "SELECT * FROM `login` WHERE`id` = '".$id."'"
+		//$user = self::find_by_sql($query)
+		//$user = array_shift($user);
+		//return $user->username;
+		//var_dump($user); exit();
+
 	}
  }
 ?>

@@ -3,13 +3,12 @@
 	<head>
 		<title>gamelibrary</title>
 		<link rel='stylesheet' type='text/css' href='./css/style.css' />
-		<link rel='stylesheet' type='text/css' href='./css/custom-theme/jquery-ui-1.9.2.custom.css' />
+		<link rel='stylesheet' type='text/css' href='./css/custom-theme/jquery-ui-1.9.2.custom.css'/>
+		<script style='text/javascript' src='./jquery/jquery-1.8.3.js'></script>
+		<script style='text/javascript' src='./jquery/jquery-ui-1.9.2.custom.js'></script>
+		<script style='text/javascript' src='./jquery/jquery.validate.js'></script>
 		<script style='text/javascript' src='./js/script.js' ></script>
-		<script style='text/javascript' src='./jquery/jquery-1.8.3.js' ></script>
-		<script style='text/javascript' src='./jquery/jquery-ui-1.9.2.custom.js' ></script>
-		<script style='text/javascript' src='./jquery/jquery.validate.js' ></script>
 	</head>
-	
 	<body>
 		<div id="container">
 			<div id='banner'>
@@ -25,6 +24,7 @@
 			<div id='footer'>
 				<?php include("footer.php"); ?>
 			</div>
-		</div>			
+		</div>
+		
 	</body>
 </html>
